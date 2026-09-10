@@ -17,11 +17,11 @@ int main()
 		std::cout << "Shortest: " << sp.shortestSpan() << std::endl;
 		std::cout << "Longest: " << sp.longestSpan() << std::endl;
 
+		std::cout << "\n10,000 numbers " << std::endl;
 		Span bigSpan(10000);
 		for (int i = 0; i < 10000; ++i)
 			bigSpan.addNumber(i);
 
-		std::cout << "\n10,000 numbers " << std::endl;
 		std::cout << "Shortest: " << bigSpan.shortestSpan() << std::endl;
 		std::cout << "Longest: " << bigSpan.longestSpan() << std::endl;
 
