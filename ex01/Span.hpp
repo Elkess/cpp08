@@ -21,9 +21,9 @@ class Span {
 		template <typename T>
 		void	addNumbers(typename T::iterator begin, typename T::iterator end)
 		{
-		if (numbers.size() + std::distance(begin, end) > N)
-			throw std::runtime_error("Cannot add more numbers, container is full");
-		numbers.insert(numbers.end(), begin, end);
+			if (numbers.size() + std::distance(begin, end) > N)
+				throw std::runtime_error("Cannot add more numbers, container is full");
+			numbers.insert(numbers.end(), begin, end);
 		}
 		~Span();
 };

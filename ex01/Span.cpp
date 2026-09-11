@@ -63,12 +63,7 @@ int		Span::longestSpan()
 	if (numbers.size() < 2)
 		throw std::runtime_error("Not enough numbers to find a span");
 
-	std::sort(numbers.begin(), numbers.end());
-	int min = numbers[0];
-	int max = numbers[numbers.size() - 1];
+	int min = *std::min_element(numbers.begin(), numbers.end());
+	int max = *std::max_element(numbers.begin(), numbers.end());
 	return max - min;
 }
-
-
-
-

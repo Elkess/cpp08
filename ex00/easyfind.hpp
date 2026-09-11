@@ -21,4 +21,5 @@ typename T::const_iterator easyfind(const T &con, int n)
 		throw std::runtime_error("Value not found in container");
 	return it;
 }
+
 #endif
